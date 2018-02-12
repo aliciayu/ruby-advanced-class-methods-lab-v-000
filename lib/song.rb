@@ -16,10 +16,10 @@ class Song
   	song
   end
 
-  def self.new_by_name(hash)
-    c = self.new
-	  c.name = hash[:name]
-	  c.artist_name = hash[:artist_name]
+  def self.new_by_name(song_name)
+    song = self.create
+	  song.name = song_name
+	  song
 
   end
 
